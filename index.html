@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AMH Law Firm | Artigas, Mosqueira &amp; Halpern</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+  @font-face {
+    font-family: 'Bitter';
+    src: url('assets/fonts/Bitter/Bitter-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Bitter';
+    src: url('assets/fonts/Bitter/Bitter-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; font-style: italic; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+    font-weight: 500; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  body { font-family: 'Raleway', sans-serif; }
+  .serif { font-family: 'Bitter', serif; }
+  .uppercase-spacing { letter-spacing: 0.2em; text-transform: uppercase; }
+
+  /* Mobile menu */
+  .mobile-drawer {
+    position: fixed; inset: 0; background: #1a1a1a; z-index: 200;
+    display: flex; flex-direction: column;
+    padding: 80px 40px 48px;
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  }
+  .mobile-drawer.open { transform: translateX(0); }
+</style>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "amh-dark": "#1a1a1a",
+          "amh-brown": "#493738",
+          "amh-blue": "#0D1B2A",
+          "amh-light": "#f8f8f8",
+          "amh-gold": "#baaa79"
+        },
+        fontFamily: {
+          serif: ["Bitter", "serif"],
+          sans: ["Raleway", "sans-serif"]
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="bg-white text-amh-dark selection:bg-amh-gold/30">
+
+<!-- ===== HEADER ===== -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-12 py-6 transition-all duration-300" style="background-color: rgba(21,21,21,0.95); backdrop-filter: blur(12px);">
+  <a href="#">
+    <img src="assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern" class="h-8 w-auto">
+  </a>
+  <div class="hidden lg:flex items-center space-x-8">
+    <a class="text-white text-[11px] uppercase-spacing hover:text-white/70 transition-colors font-sans" href="#about">Quienes somos</a>
+    <a class="text-white text-[11px] uppercase-spacing hover:text-white/70 transition-colors font-sans" href="#areas">Áreas de práctica</a>
+    <a class="text-white text-[11px] uppercase-spacing hover:text-white/70 transition-colors font-sans" href="#team">Nuestro equipo</a>
+    <a class="text-white text-[11px] uppercase-spacing hover:text-white/70 transition-colors font-sans" href="#contact">Contacto</a>
+    <a class="text-white text-[11px] font-semibold tracking-widest ml-4 font-sans hover:text-white/70 transition-colors" href="#">EN | ES</a>
+  </div>
+  <!-- Mobile menu button -->
+  <button class="lg:hidden text-white p-2" onclick="toggleMenu()" aria-label="Abrir menú">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+      <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <button class="absolute top-5 right-6 text-white p-2" onclick="toggleMenu()" aria-label="Cerrar menú">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+      <line x1="1" y1="1" x2="19" y2="19"/><line x1="19" y1="1" x2="1" y2="19"/>
+    </svg>
+  </button>
+  <nav class="flex flex-col gap-7 mb-10">
+    <a href="#about" onclick="toggleMenu()" class="serif text-white text-3xl font-light">Quiénes somos</a>
+    <a href="#areas" onclick="toggleMenu()" class="serif text-white text-3xl font-light">Áreas de práctica</a>
+    <a href="#team" onclick="toggleMenu()" class="serif text-white text-3xl font-light">Nuestro equipo</a>
+    <a href="#contact" onclick="toggleMenu()" class="serif text-white text-3xl font-light">Contacto</a>
+  </nav>
+  <div class="flex gap-3 text-white/60 text-xs tracking-widest uppercase">
+    <a href="#" class="text-white font-semibold">ES</a>
+    <span>|</span>
+    <a href="#">EN</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<header class="relative h-screen min-h-[700px] w-full flex items-end overflow-hidden bg-black p-12 md:p-24 justify-start">
+  <img class="absolute inset-0 w-full h-full object-cover opacity-60 grayscale"
+       src="assets/images/bg/hero-columns.png"
+       alt="Columnas neoclásicas">
+  <div class="relative z-10 max-w-5xl text-left">
+    <span class="block text-white text-[13px] uppercase-spacing mb-8 font-sans">Asesoría Integral</span>
+    <h1 class="text-white serif text-5xl md:text-7xl leading-[1.1] font-light">
+      Comprometidos con tus decisiones, <span class="font-bold">expertos en cada desafío legal.</span>
+    </h1>
+  </div>
+</header>
+
+<!-- ===== QUIÉNES SOMOS ===== -->
+<section id="about" class="text-white py-24 md:py-32 px-12 lg:px-24" style="background-color: #493738;">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+    <div>
+      <span class="text-[12px] uppercase-spacing text-white/60 mb-6 block font-sans">Nuestro Estudio</span>
+      <h2 class="serif text-5xl md:text-7xl leading-tight font-medium">Quiénes<br/>somos</h2>
+    </div>
+    <div class="flex flex-col justify-center h-full">
+      <p class="text-[15px] md:text-lg leading-relaxed text-white/90 font-light font-sans">
+        Somos abogados <span class="font-bold">comprometidos con nuestros clientes</span>, nuestra forma de trabajar es estar ahí cuando nos necesiten. Nos apasiona lo que hacemos, buscamos desafíos jurídicos, y nos interesamos sinceramente en los negocios y asuntos de nuestros clientes. Eso es lo que nos une como equipo.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÁREAS DE PRÁCTICA — intro ===== -->
+<section id="areas" class="grid md:grid-cols-2">
+  <div class="h-[500px] md:h-auto overflow-hidden">
+    <img class="w-full h-full object-cover grayscale"
+         src="assets/images/bg/about-meeting.png"
+         alt="Reunión legal">
+  </div>
+  <div class="bg-amh-light py-24 px-12 lg:px-24 flex flex-col justify-center">
+    <span class="text-[12px] uppercase-spacing text-amh-dark/50 mb-6 block font-sans">Qué hacemos</span>
+    <h2 class="serif text-5xl md:text-6xl text-amh-dark mb-10 leading-tight">Áreas de<br/>práctica</h2>
+    <p class="text-[15px] leading-relaxed text-amh-dark/70 font-light max-w-lg font-sans">
+      Nuestra experiencia se centra en asesoría legal de empresas, desarrollo de negocios y expansión de empresas chilenas al extranjero, procesos de reestructuraciones societarias, derecho laboral, además de planificaciones hereditarias y particiones. En materia litigiosa, contamos con una profunda práctica judicial en arbitrajes, litigios civiles y comerciales, juicios de construcción, de compras públicas y litigación laboral en todo su espectro.
+    </p>
+  </div>
+</section>
+
+<!-- ===== ÁREAS DE PRÁCTICA — lista ===== -->
+<section class="grid md:grid-cols-2">
+  <div class="bg-[#121212] text-white py-20 px-12 lg:px-24">
+    <div class="space-y-3 font-sans">
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Derecho Corporativo.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Derecho Inmobiliario.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Derecho de la Construcción.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Derecho Laboral.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Litigación Laboral.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Asuntos Sindicales y Negociación Colectiva.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Litigación Penal asociada a Temas Laborales.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Derecho y Gestión Migratoria (Expatriados).</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Auditoría y Due Diligence Laboral.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Compliance Corporativo.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Compliance en Protección de Datos Personales.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Litigación en Protección de Datos Personales.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Planificaciones Patrimoniales.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Particiones y Derecho Sucesorio.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Venture Capital y Private Equity.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Litigación Civil y Comercial, Ordinaria y Arbitral.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Contratación con la Administración del Estado y Litigación de Contratación Pública.</span></div>
+      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Informes en Derecho.</span></div>
+    </div>
+  </div>
+  <div class="h-[500px] md:h-auto overflow-hidden">
+    <img class="w-full h-full object-cover grayscale"
+         src="assets/images/bg/areas-handshake.png"
+         alt="Apretón de manos profesional">
+  </div>
+</section>
+
+<!-- ===== NUESTRO EQUIPO ===== -->
+<section id="team" class="text-white py-24 md:py-32 px-12 lg:px-24" style="background-color: #0D1B2A;">
+  <div class="max-w-7xl mx-auto">
+    <span class="text-[12px] uppercase-spacing text-white/40 mb-6 block font-sans">Personas</span>
+    <h2 class="serif text-5xl md:text-7xl mb-20 leading-tight">Nuestro <span class="italic">equipo</span></h2>
+
+    <!-- Socios + Director -->
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <div class="space-y-4">
+        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
+          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
+               src="assets/images/team/team-1.png" alt="Alejandro Artigas Barrenechea">
+        </div>
+        <div class="font-sans">
+          <h3 class="text-sm font-bold leading-tight">Alejandro<br/>Artigas Barrenechea</h3>
+          <span class="text-[10px] uppercase-spacing text-white/40">Socio</span>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
+          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
+               src="assets/images/team/team-2.png" alt="Francisco Mosqueira Peña">
+        </div>
+        <div class="font-sans">
+          <h3 class="text-sm font-bold leading-tight">Francisco<br/>Mosqueira Peña</h3>
+          <span class="text-[10px] uppercase-spacing text-white/40">Socio</span>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
+          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
+               src="assets/images/team/team-3.png" alt="Gabriel Halpern Mager">
+        </div>
+        <div class="font-sans">
+          <h3 class="text-sm font-bold leading-tight">Gabriel<br/>Halpern Mager</h3>
+          <span class="text-[10px] uppercase-spacing text-white/40">Socio</span>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
+          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
+               src="assets/images/team/team-4.png" alt="Carlos Cubillos Gunther">
+        </div>
+        <div class="font-sans">
+          <h3 class="text-sm font-bold leading-tight">Carlos<br/>Cubillos Gunther</h3>
+          <span class="text-[10px] uppercase-spacing text-white/40">Director</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Asociados -->
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="space-y-4">
+        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
+          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
+               src="assets/images/team/team-5.png" alt="Magdalena Fernández Bravo">
+        </div>
+        <div class="font-sans">
+          <h3 class="text-sm font-bold leading-tight">Magdalena<br/>Fernández Bravo</h3>
+          <span class="text-[10px] uppercase-spacing text-white/40">Asociada</span>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
+          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
+               src="assets/images/team/team-6.png" alt="Pablo Muñoz Peña">
+        </div>
+        <div class="font-sans">
+          <h3 class="text-sm font-bold leading-tight">Pablo<br/>Muñoz Peña</h3>
+          <span class="text-[10px] uppercase-spacing text-white/40">Asociado</span>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
+          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
+               src="assets/images/team/team-7.png" alt="Sofía Catalán Guarda">
+        </div>
+        <div class="font-sans">
+          <h3 class="text-sm font-bold leading-tight">Sofía<br/>Catalán Guarda</h3>
+          <span class="text-[10px] uppercase-spacing text-white/40">Asociada</span>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
+          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
+               src="assets/images/team/team-8.png" alt="Rosario Artigas Parra">
+        </div>
+        <div class="font-sans">
+          <h3 class="text-sm font-bold leading-tight">Rosario<br/>Artigas Parra</h3>
+          <span class="text-[10px] uppercase-spacing text-white/40">Asociada</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="contact" class="bg-black text-white py-0">
+  <div class="w-full h-80 overflow-hidden">
+    <img class="w-full h-full object-cover grayscale opacity-40"
+         src="assets/images/bg/building-facade.png"
+         alt="Edificio corporativo">
+  </div>
+  <div class="px-12 lg:px-24 py-16 flex flex-col md:flex-row justify-between items-end gap-12">
+    <div>
+      <img src="assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern" class="h-8 w-auto mb-4">
+    </div>
+    <div class="text-right font-sans">
+      <h4 class="text-[12px] uppercase-spacing text-white/40 mb-6">Contacto</h4>
+      <div class="space-y-1">
+        <p class="text-sm text-white/90">contacto@amhlegal.cl</p>
+        <p class="text-sm text-white/50">Av. Presidente Errázuriz 2999, oficina 201,<br/>Las Condes, Santiago, Chile.</p>
+        <p class="text-sm text-white/50 mt-4">+56 2 2436 2246</p>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-white/10 px-12 lg:px-24 py-6 flex justify-between items-center">
+    <p class="text-[11px] text-white/25">© 2025 Artigas, Mosqueira & Halpern Abogados SpA. Todos los derechos reservados.</p>
+    <div class="flex gap-3 text-[11px] text-white/25 tracking-widest uppercase">
+      <a href="#" class="text-white/70 hover:text-white transition-colors">ES</a>
+      <span>|</span>
+      <a href="#" class="hover:text-white transition-colors">EN</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Header scroll effect
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      nav.style.paddingTop = '14px';
+      nav.style.paddingBottom = '14px';
+    } else {
+      nav.style.paddingTop = '24px';
+      nav.style.paddingBottom = '24px';
+    }
+  });
+
+  // Mobile menu
+  const drawer = document.getElementById('mobileDrawer');
+  function toggleMenu() {
+    drawer.classList.toggle('open');
+    document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
+  }
+</script>
+</body>
+</html>
