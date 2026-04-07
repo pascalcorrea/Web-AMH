@@ -3,8 +3,56 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AMH Law Firm | Artigas, Mosqueira &amp; Halpern</title>
+<title>AMH — Artigas, Mosqueira & Halpern | Abogados Santiago</title>
+<meta name="description" content="AMH Artigas, Mosqueira & Halpern — Firma de abogados con experiencia en derecho corporativo, laboral, inmobiliario, compliance y litigios. Las Condes, Santiago, Chile.">
+<meta name="keywords" content="abogados chile, firma legal santiago, derecho corporativo, derecho laboral, litigios, compliance, protección datos, inmobiliario, artigas mosqueira halpern">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#151515">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:title" content="AMH — Artigas, Mosqueira & Halpern | Abogados">
+<meta property="og:description" content="Firma de abogados comprometida con sus clientes. Experiencia en derecho corporativo, laboral, inmobiliario, compliance y litigios. Santiago, Chile.">
+<meta property="og:site_name" content="AMH Abogados">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AMH — Artigas, Mosqueira & Halpern">
+<meta name="twitter:description" content="Firma de abogados comprometida con sus clientes. Santiago, Chile.">
+<!-- Preconnect -->
+<link rel="preconnect" href="https://cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+<!-- Preload fuentes críticas -->
+<link rel="preload" href="assets/fonts/Bitter/Bitter-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/Raleway/Raleway-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/Raleway/Raleway-Bold.ttf" as="font" type="font/ttf" crossorigin>
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "AMH Artigas, Mosqueira & Halpern",
+  "description": "Firma de abogados especializada en derecho corporativo, laboral, inmobiliario, compliance y litigios",
+  "url": "https://www.amhlegal.cl",
+  "telephone": "+56224362246",
+  "email": "contacto@amhlegal.cl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Presidente Errázuriz 2999, Of. 201",
+    "addressLocality": "Las Condes",
+    "addressRegion": "Región Metropolitana",
+    "addressCountry": "CL"
+  },
+  "employee": [
+    {"@type": "Person", "name": "Alejandro Artigas Barrenechea", "jobTitle": "Socio"},
+    {"@type": "Person", "name": "Francisco Mosqueira Peña", "jobTitle": "Socio"},
+    {"@type": "Person", "name": "Gabriel Halpern Mager", "jobTitle": "Socio"},
+    {"@type": "Person", "name": "Carlos Cubillos Gunther", "jobTitle": "Director"}
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/ux.css">
 <style>
   @font-face {
     font-family: 'Bitter';
@@ -84,10 +132,10 @@
     <img src="assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern" class="h-8 w-auto">
   </a>
   <div class="hidden lg:flex items-center space-x-8">
-    <a class="text-white text-[11px] uppercase-spacing hover:text-white/70 transition-colors font-sans" href="#about">Quienes somos</a>
-    <a class="text-white text-[11px] uppercase-spacing hover:text-white/70 transition-colors font-sans" href="#areas">Áreas de práctica</a>
-    <a class="text-white text-[11px] uppercase-spacing hover:text-white/70 transition-colors font-sans" href="#team">Nuestro equipo</a>
-    <a class="text-white text-[11px] uppercase-spacing hover:text-white/70 transition-colors font-sans" href="#contact">Contacto</a>
+    <a class="text-white text-[11px] uppercase-spacing transition-colors font-sans nav-link" href="#about">Quienes somos</a>
+    <a class="text-white text-[11px] uppercase-spacing transition-colors font-sans nav-link" href="#areas">Áreas de práctica</a>
+    <a class="text-white text-[11px] uppercase-spacing transition-colors font-sans nav-link" href="#team">Nuestro equipo</a>
+    <a class="text-white text-[11px] uppercase-spacing transition-colors font-sans nav-link" href="#contact">Contacto</a>
     <a class="text-white text-[11px] font-semibold tracking-widest ml-4 font-sans hover:text-white/70 transition-colors" href="#">EN | ES</a>
   </div>
   <!-- Mobile menu button -->
@@ -122,10 +170,10 @@
 <header class="relative h-screen min-h-[700px] w-full flex items-end overflow-hidden bg-black p-12 md:p-24 justify-start">
   <img class="absolute inset-0 w-full h-full object-cover opacity-60 grayscale"
        src="assets/images/bg/hero-columns.png"
-       alt="Columnas neoclásicas">
+       alt="Columnas neoclásicas" loading="eager" fetchpriority="high">
   <div class="relative z-10 max-w-5xl text-left">
-    <span class="block text-white text-[13px] uppercase-spacing mb-8 font-sans">Asesoría Integral</span>
-    <h1 class="text-white serif text-5xl md:text-7xl leading-[1.1] font-light">
+    <span class="block text-white text-[13px] uppercase-spacing mb-8 font-sans hero-label">Asesoría Integral</span>
+    <h1 class="text-white serif text-3xl sm:text-5xl md:text-7xl leading-[1.1] font-light hero-title">
       Comprometidos con tus decisiones, <span class="font-bold">expertos en cada desafío legal.</span>
     </h1>
   </div>
@@ -136,7 +184,7 @@
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
     <div>
       <span class="text-[12px] uppercase-spacing text-white/60 mb-6 block font-sans">Nuestro Estudio</span>
-      <h2 class="serif text-5xl md:text-7xl leading-tight font-medium">Quiénes<br/>somos</h2>
+      <h2 class="serif text-5xl md:text-7xl leading-tight font-medium anim-fade-up">Quiénes<br/>somos</h2>
     </div>
     <div class="flex flex-col justify-center h-full">
       <p class="text-[15px] md:text-lg leading-relaxed text-white/90 font-light font-sans">
@@ -150,12 +198,12 @@
 <section id="areas" class="grid md:grid-cols-2">
   <div class="h-[500px] md:h-auto overflow-hidden">
     <img class="w-full h-full object-cover grayscale"
-         src="assets/images/bg/about-meeting.png"
+         src="assets/images/bg/about-meeting.png" loading="lazy"
          alt="Reunión legal">
   </div>
   <div class="bg-amh-light py-24 px-12 lg:px-24 flex flex-col justify-center">
     <span class="text-[12px] uppercase-spacing text-amh-dark/50 mb-6 block font-sans">Qué hacemos</span>
-    <h2 class="serif text-5xl md:text-6xl text-amh-dark mb-10 leading-tight">Áreas de<br/>práctica</h2>
+    <h2 class="serif text-5xl md:text-6xl text-amh-dark mb-10 leading-tight anim-fade-up">Áreas de<br/>práctica</h2>
     <p class="text-[15px] leading-relaxed text-amh-dark/70 font-light max-w-lg font-sans">
       Nuestra experiencia se centra en asesoría legal de empresas, desarrollo de negocios y expansión de empresas chilenas al extranjero, procesos de reestructuraciones societarias, derecho laboral, además de planificaciones hereditarias y particiones. En materia litigiosa, contamos con una profunda práctica judicial en arbitrajes, litigios civiles y comerciales, juicios de construcción, de compras públicas y litigación laboral en todo su espectro.
     </p>
@@ -163,33 +211,131 @@
 </section>
 
 <!-- ===== ÁREAS DE PRÁCTICA — lista ===== -->
-<section class="grid md:grid-cols-2">
-  <div class="bg-[#121212] text-white py-20 px-12 lg:px-24">
-    <div class="space-y-3 font-sans">
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Derecho Corporativo.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Derecho Inmobiliario.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Derecho de la Construcción.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Derecho Laboral.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Litigación Laboral.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Asuntos Sindicales y Negociación Colectiva.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Litigación Penal asociada a Temas Laborales.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Derecho y Gestión Migratoria (Expatriados).</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Auditoría y Due Diligence Laboral.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Compliance Corporativo.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Compliance en Protección de Datos Personales.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Litigación en Protección de Datos Personales.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Planificaciones Patrimoniales.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Particiones y Derecho Sucesorio.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Venture Capital y Private Equity.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Litigación Civil y Comercial, Ordinaria y Arbitral.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="text-white/80">Contratación con la Administración del Estado y Litigación de Contratación Pública.</span></div>
-      <div class="flex items-center gap-3 text-[13px]"><span class="text-white/30 text-xs">›</span><span class="font-bold">Informes en Derecho.</span></div>
+<section class="bg-[#121212] text-white py-20 px-12 lg:px-24">
+  <div class="max-w-7xl mx-auto">
+    <div id="areas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-0 border-t border-white/10 font-sans">
+
+      <!-- Columna izquierda -->
+      <div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">01</span>
+          <span class="text-[13px] text-white/75">Derecho Corporativo</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">02</span>
+          <span class="text-[13px] text-white/75">Derecho Inmobiliario</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">03</span>
+          <span class="text-[13px] text-white/75">Derecho de la Construcción</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">04</span>
+          <span class="text-[13px] text-white/75">Derecho Laboral</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">05</span>
+          <span class="text-[13px] text-white/75">Litigación Laboral</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">06</span>
+          <span class="text-[13px] text-white/75">Asuntos Sindicales y Negociación Colectiva</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">07</span>
+          <span class="text-[13px] text-white/75">Litigación Penal asociada a Temas Laborales</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:border-b-0">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">08</span>
+          <span class="text-[13px] text-white/75">Derecho y Gestión Migratoria (Expatriados)</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">09</span>
+          <span class="text-[13px] text-white/75">Auditoría y Due Diligence Laboral</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">10</span>
+          <span class="text-[13px] text-white/75">Compliance Corporativo</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">11</span>
+          <span class="text-[13px] text-white/75">Compliance en Protección de Datos Personales</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">12</span>
+          <span class="text-[13px] text-white/75">Litigación en Protección de Datos Personales</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">13</span>
+          <span class="text-[13px] text-white/75">Planificaciones Patrimoniales</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">14</span>
+          <span class="text-[13px] text-white/75">Particiones y Derecho Sucesorio</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">15</span>
+          <span class="text-[13px] text-white/75">Venture Capital y Private Equity</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">16</span>
+          <span class="text-[13px] text-white/75">Litigación Civil y Comercial, Ordinaria y Arbitral</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">17</span>
+          <span class="text-[13px] text-white/75">Contratación con la Administración del Estado y Litigación de Contratación Pública</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 md:hidden">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">18</span>
+          <span class="text-[13px] text-white/75">Informes en Derecho</span>
+        </div>
+      </div>
+
+      <!-- Columna derecha (solo desktop) -->
+      <div class="hidden md:block">
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">09</span>
+          <span class="text-[13px] text-white/75">Auditoría y Due Diligence Laboral</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">10</span>
+          <span class="text-[13px] text-white/75">Compliance Corporativo</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">11</span>
+          <span class="text-[13px] text-white/75">Compliance en Protección de Datos Personales</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">12</span>
+          <span class="text-[13px] text-white/75">Litigación en Protección de Datos Personales</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">13</span>
+          <span class="text-[13px] text-white/75">Planificaciones Patrimoniales</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">14</span>
+          <span class="text-[13px] text-white/75">Particiones y Derecho Sucesorio</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">15</span>
+          <span class="text-[13px] text-white/75">Venture Capital y Private Equity</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">16</span>
+          <span class="text-[13px] text-white/75">Litigación Civil y Comercial, Ordinaria y Arbitral</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4 border-b border-white/8">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">17</span>
+          <span class="text-[13px] text-white/75">Contratación con la Administración del Estado y Litigación de Contratación Pública</span>
+        </div>
+        <div class="area-item anim-fade-up flex items-baseline gap-4 py-4">
+          <span class="text-white/25 text-[10px] font-semibold tracking-widest min-w-[24px]">18</span>
+          <span class="text-[13px] text-white/75">Informes en Derecho</span>
+        </div>
+      </div>
+
     </div>
-  </div>
-  <div class="h-[500px] md:h-auto overflow-hidden">
-    <img class="w-full h-full object-cover grayscale"
-         src="assets/images/bg/areas-handshake.png"
-         alt="Apretón de manos profesional">
   </div>
 </section>
 
@@ -197,94 +343,96 @@
 <section id="team" class="text-white py-24 md:py-32 px-12 lg:px-24" style="background-color: #0D1B2A;">
   <div class="max-w-7xl mx-auto">
     <span class="text-[12px] uppercase-spacing text-white/40 mb-6 block font-sans">Personas</span>
-    <h2 class="serif text-5xl md:text-7xl mb-20 leading-tight">Nuestro <span class="italic">equipo</span></h2>
+    <h2 class="serif text-5xl md:text-7xl mb-20 leading-tight anim-fade-up">Nuestro <span class="italic">equipo</span></h2>
 
     <!-- Socios + Director -->
-    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-      <div class="space-y-4">
-        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
-          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
-               src="assets/images/team/team-1.png" alt="Alejandro Artigas Barrenechea">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 mb-0">
+
+      <a href="equipo/alejandro-artigas.html" class="relative aspect-[3/4] bg-slate-800 overflow-hidden group block">
+        <img class="w-full h-full object-cover object-top grayscale group-hover:scale-105 transition-transform duration-700"
+             src="assets/images/team/team-1.png" alt="Alejandro Artigas Barrenechea" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 font-sans">
+          <span class="text-[10px] uppercase-spacing text-white/50 block mb-1">Socio</span>
+          <h3 class="text-sm leading-snug text-white">Alejandro <span class="font-bold">Artigas Barrenechea</span></h3>
         </div>
-        <div class="font-sans">
-          <h3 class="text-sm font-bold leading-tight">Alejandro<br/>Artigas Barrenechea</h3>
-          <span class="text-[10px] uppercase-spacing text-white/40">Socio</span>
+      </a>
+
+      <a href="equipo/francisco-mosqueira.html" class="relative aspect-[3/4] bg-slate-800 overflow-hidden group block">
+        <img class="w-full h-full object-cover object-top grayscale group-hover:scale-105 transition-transform duration-700"
+             src="assets/images/team/team-2.png" alt="Francisco Mosqueira Peña" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 font-sans">
+          <span class="text-[10px] uppercase-spacing text-white/50 block mb-1">Socio</span>
+          <h3 class="text-sm leading-snug text-white">Francisco <span class="font-bold">Mosqueira Peña</span></h3>
         </div>
-      </div>
-      <div class="space-y-4">
-        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
-          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
-               src="assets/images/team/team-2.png" alt="Francisco Mosqueira Peña">
+      </a>
+
+      <a href="equipo/gabriel-halpern.html" class="relative aspect-[3/4] bg-slate-800 overflow-hidden group block">
+        <img class="w-full h-full object-cover object-top grayscale group-hover:scale-105 transition-transform duration-700"
+             src="assets/images/team/team-3.png" alt="Gabriel Halpern Mager" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 font-sans">
+          <span class="text-[10px] uppercase-spacing text-white/50 block mb-1">Socio</span>
+          <h3 class="text-sm leading-snug text-white">Gabriel <span class="font-bold">Halpern Mager</span></h3>
         </div>
-        <div class="font-sans">
-          <h3 class="text-sm font-bold leading-tight">Francisco<br/>Mosqueira Peña</h3>
-          <span class="text-[10px] uppercase-spacing text-white/40">Socio</span>
+      </a>
+
+      <a href="equipo/carlos-cubillos.html" class="relative aspect-[3/4] bg-slate-800 overflow-hidden group block">
+        <img class="w-full h-full object-cover object-top grayscale group-hover:scale-105 transition-transform duration-700"
+             src="assets/images/team/team-4.png" alt="Carlos Cubillos Gunther" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 font-sans">
+          <span class="text-[10px] uppercase-spacing text-white/50 block mb-1">Director</span>
+          <h3 class="text-sm leading-snug text-white">Carlos <span class="font-bold">Cubillos Gunther</span></h3>
         </div>
-      </div>
-      <div class="space-y-4">
-        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
-          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
-               src="assets/images/team/team-3.png" alt="Gabriel Halpern Mager">
-        </div>
-        <div class="font-sans">
-          <h3 class="text-sm font-bold leading-tight">Gabriel<br/>Halpern Mager</h3>
-          <span class="text-[10px] uppercase-spacing text-white/40">Socio</span>
-        </div>
-      </div>
-      <div class="space-y-4">
-        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
-          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
-               src="assets/images/team/team-4.png" alt="Carlos Cubillos Gunther">
-        </div>
-        <div class="font-sans">
-          <h3 class="text-sm font-bold leading-tight">Carlos<br/>Cubillos Gunther</h3>
-          <span class="text-[10px] uppercase-spacing text-white/40">Director</span>
-        </div>
-      </div>
+      </a>
+
     </div>
 
     <!-- Asociados -->
-    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div class="space-y-4">
-        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
-          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
-               src="assets/images/team/team-5.png" alt="Magdalena Fernández Bravo">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
+
+      <a href="equipo/magdalena-fernandez.html" class="relative aspect-[3/4] bg-slate-800 overflow-hidden group block">
+        <img class="w-full h-full object-cover object-top grayscale group-hover:scale-105 transition-transform duration-700"
+             src="assets/images/team/team-5.png" alt="Magdalena Fernández Bravo" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 font-sans">
+          <span class="text-[10px] uppercase-spacing text-white/50 block mb-1">Asociada</span>
+          <h3 class="text-sm leading-snug text-white">Magdalena <span class="font-bold">Fernández Bravo</span></h3>
         </div>
-        <div class="font-sans">
-          <h3 class="text-sm font-bold leading-tight">Magdalena<br/>Fernández Bravo</h3>
-          <span class="text-[10px] uppercase-spacing text-white/40">Asociada</span>
+      </a>
+
+      <a href="equipo/pablo-munoz.html" class="relative aspect-[3/4] bg-slate-800 overflow-hidden group block">
+        <img class="w-full h-full object-cover object-top grayscale group-hover:scale-105 transition-transform duration-700"
+             src="assets/images/team/team-6.png" alt="Pablo Muñoz Peña" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 font-sans">
+          <span class="text-[10px] uppercase-spacing text-white/50 block mb-1">Asociado</span>
+          <h3 class="text-sm leading-snug text-white">Pablo <span class="font-bold">Muñoz Peña</span></h3>
         </div>
-      </div>
-      <div class="space-y-4">
-        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
-          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
-               src="assets/images/team/team-6.png" alt="Pablo Muñoz Peña">
+      </a>
+
+      <a href="equipo/sofia-catalan.html" class="relative aspect-[3/4] bg-slate-800 overflow-hidden group block">
+        <img class="w-full h-full object-cover object-top grayscale group-hover:scale-105 transition-transform duration-700"
+             src="assets/images/team/team-7.png" alt="Sofía Catalán Guarda" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 font-sans">
+          <span class="text-[10px] uppercase-spacing text-white/50 block mb-1">Asociada</span>
+          <h3 class="text-sm leading-snug text-white">Sofía <span class="font-bold">Catalán Guarda</span></h3>
         </div>
-        <div class="font-sans">
-          <h3 class="text-sm font-bold leading-tight">Pablo<br/>Muñoz Peña</h3>
-          <span class="text-[10px] uppercase-spacing text-white/40">Asociado</span>
+      </a>
+
+      <a href="equipo/rosario-artigas.html" class="relative aspect-[3/4] bg-slate-800 overflow-hidden group block">
+        <img class="w-full h-full object-cover object-top grayscale group-hover:scale-105 transition-transform duration-700"
+             src="assets/images/team/team-8.png" alt="Rosario Artigas Parra" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 font-sans">
+          <span class="text-[10px] uppercase-spacing text-white/50 block mb-1">Asociada</span>
+          <h3 class="text-sm leading-snug text-white">Rosario <span class="font-bold">Artigas Parra</span></h3>
         </div>
-      </div>
-      <div class="space-y-4">
-        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
-          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
-               src="assets/images/team/team-7.png" alt="Sofía Catalán Guarda">
-        </div>
-        <div class="font-sans">
-          <h3 class="text-sm font-bold leading-tight">Sofía<br/>Catalán Guarda</h3>
-          <span class="text-[10px] uppercase-spacing text-white/40">Asociada</span>
-        </div>
-      </div>
-      <div class="space-y-4">
-        <div class="aspect-[3/4] bg-slate-800 overflow-hidden">
-          <img class="w-full h-full object-cover object-top grayscale hover:scale-105 transition-transform duration-700"
-               src="assets/images/team/team-8.png" alt="Rosario Artigas Parra">
-        </div>
-        <div class="font-sans">
-          <h3 class="text-sm font-bold leading-tight">Rosario<br/>Artigas Parra</h3>
-          <span class="text-[10px] uppercase-spacing text-white/40">Asociada</span>
-        </div>
-      </div>
+      </a>
+
     </div>
   </div>
 </section>
@@ -293,7 +441,7 @@
 <footer id="contact" class="bg-black text-white py-0">
   <div class="w-full h-80 overflow-hidden">
     <img class="w-full h-full object-cover grayscale opacity-40"
-         src="assets/images/bg/building-facade.png"
+         src="assets/images/bg/building-facade.png" loading="lazy"
          alt="Edificio corporativo">
   </div>
   <div class="px-12 lg:px-24 py-16 flex flex-col md:flex-row justify-between items-end gap-12">
@@ -303,9 +451,9 @@
     <div class="text-right font-sans">
       <h4 class="text-[12px] uppercase-spacing text-white/40 mb-6">Contacto</h4>
       <div class="space-y-1">
-        <p class="text-sm text-white/90">contacto@amhlegal.cl</p>
+        <a href="mailto:contacto@amhlegal.cl" class="text-sm text-white/90 hover:text-white transition-colors">contacto@amhlegal.cl</a>
         <p class="text-sm text-white/50">Av. Presidente Errázuriz 2999, oficina 201,<br/>Las Condes, Santiago, Chile.</p>
-        <p class="text-sm text-white/50 mt-4">+56 2 2436 2246</p>
+        <a href="tel:+56224362246" class="text-sm text-white/50 mt-4 block hover:text-white/80 transition-colors">+56 2 2436 2246</a>
       </div>
     </div>
   </div>
@@ -318,6 +466,16 @@
     </div>
   </div>
 </footer>
+
+<!-- Overlay drawer -->
+<div id="drawerOverlay"></div>
+
+<!-- Scroll to top -->
+<button id="scrollTopBtn" aria-label="Volver al inicio">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
 
 <script>
   // Header scroll effect
@@ -339,5 +497,7 @@
     document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
   }
 </script>
+<script src="assets/js/animations.js" defer></script>
+<script src="assets/js/ux.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alejandro Artigas Barrenechea — AMH Abogados</title>
+<meta name="description" content="Alejandro Artigas Barrenechea, Socio. AMH Artigas, Mosqueira & Halpern — Firma de abogados, Las Condes, Santiago, Chile.">
+<meta name="robots" content="index, follow">
+
+<link rel="preload" href="../assets/fonts/Bitter/Bitter-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="../assets/fonts/Raleway/Raleway-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<style>
+  @font-face {
+    font-family: 'Bitter';
+    src: url('../assets/fonts/Bitter/Bitter-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Bitter';
+    src: url('../assets/fonts/Bitter/Bitter-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; font-style: italic; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+    font-weight: 500; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+
+  :root {
+    --pad:        clamp(1.25rem, 5vw, 6rem);
+    --navy:       #131D2E;
+    --navy-dark:  #0D1B2A;
+    --text-body:  rgba(255,255,255,0.72);
+    --text-muted: rgba(255,255,255,0.40);
+    --border:     rgba(255,255,255,0.12);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--navy); font-family: 'Raleway', sans-serif; color: #fff; overflow-x: hidden; }
+
+  /* ── Wrapper ── */
+  .page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--pad);
+  }
+
+  /* ── Top bar ── */
+  .top-bar {
+    padding: clamp(1.75rem, 4vw, 3.5rem) 0 clamp(1.25rem, 2.5vw, 2rem);
+  }
+  .label {
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  /* X fijo — siempre visible al hacer scroll */
+  .btn-close {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.75rem;
+    z-index: 100;
+    font-size: 1.375rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.5rem;
+    background: rgba(19,29,46,0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 2px;
+    transition: color 0.2s, background 0.2s;
+  }
+  .btn-close:hover { color: #fff; background: rgba(19,29,46,0.95); }
+
+  /* ── Grid: foto (DOM primero) + contenido ──
+     En desktop: foto → columna derecha via order
+     En móvil:   foto → ancho completo arriba (orden natural del DOM) */
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    column-gap: 4rem;
+    align-items: start;
+  }
+
+  .photo-col {
+    order: 2;                   /* derecha en desktop */
+    position: sticky;
+    top: 2rem;
+  }
+  .photo-col img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top center;
+    filter: grayscale(100%);
+  }
+
+  .name-col { order: 1; }      /* izquierda en desktop */
+
+  /* ── Nombre ── */
+  .name-heading {
+    font-family: 'Bitter', serif;
+    font-weight: 300;
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    color: #fff;
+    font-size: clamp(2.25rem, 5.5vw, 5.75rem);
+    margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
+  }
+
+  /* ── Meta: cargo + email ── */
+  .profile-meta {
+    border-top: 1px solid var(--border);
+    padding-top: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: clamp(2rem, 3.5vw, 3rem);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem 2rem;
+    flex-wrap: wrap;
+  }
+  .profile-role {
+    font-family: 'Bitter', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+  }
+  .profile-email {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  .profile-email:hover { color: rgba(255,255,255,0.7); }
+
+  /* ── Bio ── */
+  .bio-text { padding-bottom: clamp(4rem, 8vw, 7rem); }
+  .bio-text p {
+    font-size: clamp(0.875rem, 1.05vw, 1rem);
+    line-height: 1.85;
+    color: var(--text-body);
+    max-width: 64ch;
+    margin-bottom: 1.25rem;
+  }
+  .bio-text p:last-child { margin-bottom: 0; }
+  .bio-text p:first-child {
+    font-size: clamp(0.9375rem, 1.15vw, 1.0625rem);
+    color: rgba(255,255,255,0.85);
+  }
+
+  /* ── Footer ── */
+  .site-footer {
+    background: var(--navy-dark);
+    padding: 1.75rem var(--pad);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .site-footer img { height: 26px; width: auto; display: block; }
+  .footer-back {
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-back:hover { color: rgba(255,255,255,0.7); }
+
+  /* ─────────────────────
+     TABLET  768–1023px
+  ───────────────────── */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .profile-grid {
+      grid-template-columns: 1fr 200px;
+      column-gap: 2.5rem;
+    }
+    .name-heading { font-size: clamp(2.25rem, 4.5vw, 3.5rem); }
+  }
+
+  /* ─────────────────────
+     MÓVIL  <768px
+  ───────────────────── */
+  @media (max-width: 767px) {
+    /* Cambiar a bloque: foto (primero en DOM) aparece arriba naturalmente */
+    .profile-grid {
+      display: block;
+    }
+
+    /* Foto: ancho completo, altura recortada para no dominar la pantalla */
+    .photo-col {
+      position: static;
+      width: calc(100% + 2 * var(--pad));
+      margin-left: calc(-1 * var(--pad));
+      margin-bottom: 2rem;
+    }
+    .photo-col img {
+      aspect-ratio: 3 / 4;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Nombre */
+    .name-heading {
+      font-size: clamp(2rem, 9vw, 2.75rem);
+      line-height: 1.05;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Bio sin max-width fijo en móvil, tamaño legible */
+    .bio-text p { max-width: none; font-size: 0.9375rem; }
+    .bio-text p:first-child { font-size: 1rem; }
+  }
+
+  /* Footer móvil pequeño */
+  @media (max-width: 480px) {
+    .site-footer { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- X fijo -->
+<a href="../index.html#team" class="btn-close" aria-label="Volver al equipo">&#x2715;</a>
+
+<div class="page-wrapper">
+  <div class="top-bar">
+    <span class="label">Nuestro Equipo</span>
+  </div>
+
+  <div class="profile-grid">
+
+    <!-- Foto: primera en el DOM → arriba en móvil, derecha en desktop (order:2) -->
+    <div class="photo-col">
+      <img src="../assets/images/team/team-1.png"
+           alt="Alejandro Artigas Barrenechea">
+    </div>
+
+    <!-- Contenido: nombre + meta + bio -->
+    <div class="name-col">
+      <h1 class="name-heading">
+        Alejandro<br>
+        Artigas<br>
+        Barrenechea
+      </h1>
+
+      <div class="profile-meta">
+        <span class="profile-role">Socio</span>
+        <a href="mailto:aartigas@amhlegal.cl" class="profile-email">aartigas@amhlegal.cl</a>
+      </div>
+
+      <div class="bio-text">
+        <p>Es abogado de la Pontificia Universidad Católica de Chile. Recibió su título el año 2008.</p>
+        <p>Master of Laws (LL.M.) Northwestern Pritzker School of Law, Chicago, USA, 2024, aprobado con honores.</p>
+        <p>Certificate in Business Administration, IE Business School, Madrid, España, 2024.</p>
+        <p>Máster en Derecho de la Empresa, Universidad de Los Andes, Chile (2010); Diplomado en Sociedades y Financiamiento, Universidad de Los Andes, Chile (2010).</p>
+        <p>Curso de Especialización en Derecho, Contratos y Daños, Universidad de Salamanca, España (2017).</p>
+        <p>Entre los años 2007 y 2011 fue Gerente Legal de Videocorp S.A., en Santiago, a cargo de la operación legal de la empresa en diversos países, así como de todas las licitaciones públicas y privadas de la compañía, tanto en Chile como en otros países de Latinoamérica. Entre los años 2011 y 2013 trabajó como abogado del estudio Carvallo, Bizzarri & García.</p>
+        <p>Se ha desempeñado como asesor legal de empresas nacionales y extranjeras, participando en sus procesos de expansión en Latinoamérica y Estados Unidos. Ha representado a empresas inmobiliarias y constructoras, para proyectos de desarrollo, inversión y renta inmobiliaria, asumiendo también el patrocinio de diversos conflictos judiciales en materia inmobiliaria y de construcción. Ha asesorado variados procesos de reestructuraciones societarias y financiamientos de diversa índole, así como procesos de estructuración de patrimonios y planificación hereditaria, siendo permanentemente requerido como juez partidor. Su práctica se concentra principalmente en materias corporativas, inmobiliarias, sucesorias y judiciales.</p>
+        <p>Integra la nómina de Jueces Árbitros de la Corte de Apelaciones de Santiago.</p>
+        <p>Integra la nómina de Jueces Árbitros del Ministerio de Vivienda y Urbanismo.</p>
+        <p>Ha sido reconocido por el ranking Best Lawyers, en todas sus ediciones desde el año 2022.</p>
+        <p>Es miembro del Colegio de Abogados de Chile A.G.</p>
+        <p>Idiomas: Español, Inglés.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  <a href="../index.html">
+    <img src="../assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern">
+  </a>
+  <a href="../index.html#team" class="footer-back">← Volver al equipo</a>
+</footer>
+
+</body>
+</html>

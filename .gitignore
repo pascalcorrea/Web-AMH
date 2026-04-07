@@ -1,0 +1,12 @@
+# Archivos originales del cliente (no versionar)
+WEB AMH/
+textos_amh.docx
+docx_text.txt
+
+# Claude
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

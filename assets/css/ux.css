@@ -1,0 +1,65 @@
+/* ===== SMOOTH SCROLL ===== */
+html { scroll-behavior: smooth; }
+
+/* Compensar header fijo */
+#about, #areas, #team, #contact {
+  scroll-margin-top: 80px;
+}
+
+/* ===== ACTIVE NAV LINKS ===== */
+.nav-link {
+  opacity: 0.65;
+  transition: opacity 0.2s ease, border-bottom 0.2s ease;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+.nav-link.active,
+.nav-link:hover {
+  opacity: 1;
+}
+.nav-link.active {
+  border-bottom-color: rgba(255,255,255,0.4);
+}
+
+/* ===== SCROLL TO TOP BUTTON ===== */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 50;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, background 0.2s ease, transform 0.2s ease;
+}
+#scrollTopBtn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+#scrollTopBtn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+/* ===== DRAWER OVERLAY ===== */
+#drawerOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 190;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+#drawerOverlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
