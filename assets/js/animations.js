@@ -29,7 +29,7 @@
         if (entry.isIntersecting) {
           // Recoge solo los items visibles (desktop muestra cols separadas)
           const items = [...entry.target.querySelectorAll('.area-item')]
-            .filter(el => el.offsetParent !== null); // excluye hidden
+            .filter(el => window.getComputedStyle(el).display !== 'none'); // excluye hidden
           items.forEach((item, i) => {
             setTimeout(() => item.classList.add('area-in'), i * 55);
           });
