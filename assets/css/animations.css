@@ -72,21 +72,6 @@ nav {
 /* Último item de cada columna sin línea */
 .area-item:last-child::after { display: none; }
 
-/* Team card hover overlay */
-.team-card-wrap {
-  position: relative;
-  overflow: hidden;
-}
-.team-card-wrap .team-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-.team-card-wrap:hover .team-overlay {
-  opacity: 1;
-}
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {

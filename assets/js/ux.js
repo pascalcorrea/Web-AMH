@@ -1,5 +1,15 @@
 (function() {
 
+  // ===== HEADER PADDING ON SCROLL =====
+  const navEl = document.querySelector('nav');
+  if (navEl) {
+    window.addEventListener('scroll', () => {
+      const compact = window.scrollY > 60;
+      navEl.style.paddingTop = compact ? '14px' : '24px';
+      navEl.style.paddingBottom = compact ? '14px' : '24px';
+    }, { passive: true });
+  }
+
   // ===== ACTIVE NAV ON SCROLL =====
   const sections = document.querySelectorAll('#about, #areas, #team, #contact');
   const navLinks = document.querySelectorAll('nav a.nav-link');

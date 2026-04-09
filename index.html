@@ -139,7 +139,7 @@
     <a class="text-white text-[11px] font-semibold tracking-widest ml-4 font-sans hover:text-white/70 transition-colors" href="#">EN | ES</a>
   </div>
   <!-- Mobile menu button -->
-  <button class="lg:hidden text-white p-2" onclick="toggleMenu()" aria-label="Abrir menú">
+  <button class="lg:hidden text-white p-2" onclick="toggleMenu()" aria-label="Abrir menú" aria-controls="mobileDrawer" aria-expanded="false">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
       <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
     </svg>
@@ -458,7 +458,7 @@
     </div>
   </div>
   <div class="border-t border-white/10 px-12 lg:px-24 py-6 flex justify-between items-center">
-    <p class="text-[11px] text-white/25">© 2025 Artigas, Mosqueira & Halpern Abogados SpA. Todos los derechos reservados.</p>
+    <p class="text-[11px] text-white/25">© 2026 Artigas, Mosqueira & Halpern Abogados SpA. Todos los derechos reservados.</p>
     <div class="flex gap-3 text-[11px] text-white/25 tracking-widest uppercase">
       <a href="#" class="text-white/70 hover:text-white transition-colors">ES</a>
       <span>|</span>
@@ -478,18 +478,6 @@
 </button>
 
 <script>
-  // Header scroll effect
-  const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 60) {
-      nav.style.paddingTop = '14px';
-      nav.style.paddingBottom = '14px';
-    } else {
-      nav.style.paddingTop = '24px';
-      nav.style.paddingBottom = '24px';
-    }
-  });
-
   // Mobile menu
   const drawer = document.getElementById('mobileDrawer');
   function toggleMenu() {
