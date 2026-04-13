@@ -1,5 +1,4 @@
 /* ===== SCROLL ANIMATIONS ===== */
-/* Clase base para elementos animables */
 .anim-fade-up {
   opacity: 0;
   transform: translateY(24px);
@@ -11,15 +10,57 @@
   transform: translateY(0);
 }
 
+/* Directional fades */
+.anim-fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.anim-fade-left.is-visible { opacity: 1; transform: translateX(0); }
+
+.anim-fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.anim-fade-right.is-visible { opacity: 1; transform: translateX(0); }
+
+/* Scale in */
+.anim-scale-in {
+  opacity: 0;
+  transform: scale(0.93);
+  transition: opacity 0.75s cubic-bezier(0.4,0,0.2,1), transform 0.75s cubic-bezier(0.4,0,0.2,1);
+}
+.anim-scale-in.is-visible { opacity: 1; transform: scale(1); }
+
+/* Image reveal (clip-path left→right) */
+.anim-reveal {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 1.1s cubic-bezier(0.77,0,0.18,1);
+}
+.anim-reveal.is-visible { clip-path: inset(0 0% 0 0); }
+
+/* Team cards */
+.anim-card {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1), transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.anim-card.is-visible { opacity: 1; transform: translateY(0); }
+
 /* Stagger delays */
-.anim-delay-1 { transition-delay: 0.08s; }
-.anim-delay-2 { transition-delay: 0.16s; }
-.anim-delay-3 { transition-delay: 0.24s; }
-.anim-delay-4 { transition-delay: 0.32s; }
-.anim-delay-5 { transition-delay: 0.40s; }
-.anim-delay-6 { transition-delay: 0.48s; }
-.anim-delay-7 { transition-delay: 0.56s; }
-.anim-delay-8 { transition-delay: 0.64s; }
+.anim-delay-1  { transition-delay: 0.08s; }
+.anim-delay-2  { transition-delay: 0.16s; }
+.anim-delay-3  { transition-delay: 0.24s; }
+.anim-delay-4  { transition-delay: 0.32s; }
+.anim-delay-5  { transition-delay: 0.40s; }
+.anim-delay-6  { transition-delay: 0.48s; }
+.anim-delay-7  { transition-delay: 0.56s; }
+.anim-delay-8  { transition-delay: 0.64s; }
+.anim-delay-9  { transition-delay: 0.72s; }
+.anim-delay-10 { transition-delay: 0.80s; }
+.anim-delay-11 { transition-delay: 0.88s; }
+.anim-delay-12 { transition-delay: 0.96s; }
 
 /* Hero entrance */
 .hero-label { opacity: 0; transform: translateY(16px); animation: heroFadeUp 0.7s cubic-bezier(0.4,0,0.2,1) 0.3s forwards; }
@@ -28,54 +69,42 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Hero parallax optimization */
+#hero-bg { will-change: transform; }
+
 /* Header hide/show on scroll */
-nav.header-hidden {
-  transform: translateY(-100%);
-}
-nav {
-  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), padding 0.3s ease !important;
-}
+nav.header-hidden { transform: translateY(-100%); }
+nav { transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), padding 0.3s ease !important; }
 
 /* Areas — animación de entrada escalonada */
 .area-item {
   opacity: 0;
   transform: translateY(8px);
-  /* transición idle (hover) */
   transition: padding-left 0.25s ease, opacity 0.5s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1);
 }
-.area-item.area-in {
-  opacity: 1;
-  transform: translateY(0);
-}
-.area-item:hover {
-  padding-left: 8px;
-  color: white !important;
-}
+.area-item.area-in { opacity: 1; transform: translateY(0); }
+.area-item:hover { padding-left: 8px; color: white !important; }
 
 /* Línea separadora: se dibuja de izquierda a derecha al entrar */
-.area-item {
-  position: relative;
-  border-bottom: none !important; /* reemplazamos el borde Tailwind */
-}
+.area-item { position: relative; border-bottom: none !important; }
 .area-item::after {
   content: '';
   position: absolute;
   bottom: 0; left: 0;
-  height: 1px;
-  width: 0;
+  height: 1px; width: 0;
   background: rgba(255,255,255,0.08);
   transition: width 0.6s cubic-bezier(0.16,1,0.3,1);
 }
-.area-item.area-in::after {
-  width: 100%;
-}
-/* Último item de cada columna sin línea */
+.area-item.area-in::after { width: 100%; }
 .area-item:last-child::after { display: none; }
-
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .anim-fade-up { opacity: 1; transform: none; transition: none; }
+  .anim-fade-up, .anim-fade-left, .anim-fade-right,
+  .anim-scale-in, .anim-card {
+    opacity: 1; transform: none; transition: none;
+  }
+  .anim-reveal { clip-path: none; transition: none; }
   .hero-label, .hero-title { animation: none; opacity: 1; transform: none; }
   nav { transition: none !important; }
 }
