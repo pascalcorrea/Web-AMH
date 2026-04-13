@@ -8,6 +8,7 @@
 <meta name="keywords" content="abogados chile, firma legal santiago, derecho corporativo, derecho laboral, litigios, compliance, protección datos, inmobiliario, artigas mosqueira halpern">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#151515">
+<link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
 <!-- Favicon -->
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/logo-mark-dark.png">
 <link rel="apple-touch-icon" href="assets/images/logo/logo-mark-dark.png">
@@ -143,7 +144,7 @@
 <!-- ===== HEADER ===== -->
 <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-12 py-6 transition-all duration-300" style="background-color: rgba(21,21,21,0.95); backdrop-filter: blur(12px);">
   <a href="#">
-    <img src="assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern" class="h-8 w-auto">
+    <img src="assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern" class="h-10 w-auto">
   </a>
   <div class="hidden lg:flex items-center space-x-8">
     <a class="text-white text-[11px] uppercase-spacing transition-colors font-sans nav-link" href="#about">Quienes somos</a>
@@ -181,24 +182,28 @@
 </div>
 
 <!-- ===== HERO ===== -->
-<header class="relative h-screen min-h-[700px] w-full flex items-end overflow-hidden bg-black p-12 md:p-24 justify-start">
-  <img class="absolute inset-0 w-full h-full object-cover opacity-60 grayscale"
+<header class="relative h-screen min-h-[700px] w-full flex items-end bg-black p-12 md:p-24 justify-start z-20">
+  <img class="absolute inset-0 w-full h-full object-cover grayscale"
        src="assets/images/bg/hero-columns.png"
        alt="Columnas neoclásicas" loading="eager" fetchpriority="high">
   <div class="relative z-10 max-w-5xl text-left">
     <span class="block text-white text-[13px] uppercase-spacing mb-8 font-sans hero-label">Asesoría Integral</span>
-    <h1 class="text-white serif text-3xl sm:text-5xl md:text-7xl leading-[1.1] font-light hero-title">
+    <h1 class="text-white serif text-4xl sm:text-7xl md:text-8xl leading-[1.1] font-light hero-title">
       Comprometidos con tus decisiones, <span class="font-bold">expertos en cada desafío legal.</span>
     </h1>
   </div>
 </header>
 
 <!-- ===== QUIÉNES SOMOS ===== -->
-<section id="about" class="text-white py-24 md:py-32 px-12 lg:px-24" style="background-color: #493738;">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+<section id="about" class="text-white py-24 md:py-32 px-12 lg:px-24" style="background-color: #493738; position: relative; z-index: 10; overflow: visible;">
+  <!-- Circles decorativo -->
+  <img src="assets/images/bg/circulos.png" alt="" aria-hidden="true"
+       class="absolute top-0 right-0 pointer-events-none select-none z-[1] w-80 h-80 sm:w-[26rem] sm:h-[26rem] md:w-[32rem] md:h-[32rem] lg:w-[44rem] lg:h-[44rem] xl:w-[54rem] xl:h-[54rem] object-contain"
+       style="transform: translateY(-50%);">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start" style="position: relative; z-index: 2;">
     <div>
       <span class="text-[12px] uppercase-spacing text-white/60 mb-6 block font-sans">Nuestro Estudio</span>
-      <h2 class="serif text-5xl md:text-7xl leading-tight font-medium anim-fade-up">Quiénes<br/>somos</h2>
+      <h2 class="serif text-3xl md:text-7xl leading-tight font-medium anim-fade-up">Quiénes<br/>somos</h2>
     </div>
     <div class="flex flex-col justify-center h-full">
       <p class="text-[15px] md:text-lg leading-relaxed text-white/90 font-light font-sans">
@@ -217,7 +222,7 @@
   </div>
   <div class="bg-amh-light py-24 px-12 lg:px-24 flex flex-col justify-center">
     <span class="text-[12px] uppercase-spacing text-amh-dark/50 mb-6 block font-sans">Qué hacemos</span>
-    <h2 class="serif text-5xl md:text-6xl text-amh-dark mb-10 leading-tight anim-fade-up">Áreas de<br/>práctica</h2>
+    <h2 class="serif text-3xl md:text-6xl text-amh-dark mb-10 leading-tight font-medium anim-fade-up">Áreas de<br/>práctica</h2>
     <p class="text-[15px] leading-relaxed text-amh-dark/70 font-light max-w-lg font-sans">
       Nuestra experiencia se centra en asesoría legal de empresas, desarrollo de negocios y expansión de empresas chilenas al extranjero, procesos de reestructuraciones societarias, derecho laboral, además de planificaciones hereditarias y particiones. En materia litigiosa, contamos con una profunda práctica judicial en arbitrajes, litigios civiles y comerciales, juicios de construcción, de compras públicas y litigación laboral en todo su espectro.
     </p>
@@ -354,10 +359,12 @@
 </section>
 
 <!-- ===== NUESTRO EQUIPO ===== -->
-<section id="team" class="text-white py-24 md:py-32 px-12 lg:px-24" style="background-color: #0D1B2A;">
+<section id="team" class="text-white py-24 md:py-32 px-12 lg:px-24 relative overflow-hidden" style="background-color: #0D1B2A;">
+  <img src="assets/images/bg/cuadrados.png" alt="" aria-hidden="true"
+       class="absolute top-10 right-6 pointer-events-none select-none w-[26rem] sm:w-[38rem] md:w-[44rem] lg:w-[56rem] xl:w-[64rem] object-contain">
   <div class="max-w-7xl mx-auto">
     <span class="text-[12px] uppercase-spacing text-white/40 mb-6 block font-sans">Personas</span>
-    <h2 class="serif text-5xl md:text-7xl mb-20 leading-tight anim-fade-up">Nuestro <span class="italic">equipo</span></h2>
+    <h2 class="serif text-3xl md:text-7xl mb-20 leading-tight font-medium anim-fade-up">Nuestro <span class="italic">equipo</span></h2>
 
     <!-- Socios + Director -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-0">
@@ -454,13 +461,13 @@
 <!-- ===== FOOTER ===== -->
 <footer id="contact" class="bg-black text-white py-0">
   <div class="w-full h-80 overflow-hidden">
-    <img class="w-full h-full object-cover grayscale opacity-40"
+    <img class="w-full h-full object-cover grayscale"
          src="assets/images/bg/building-facade.png" loading="lazy"
          alt="Edificio corporativo">
   </div>
   <div class="px-12 lg:px-24 py-16 flex flex-col md:flex-row justify-between items-end gap-12">
     <div>
-      <img src="assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern" class="h-8 w-auto mb-4">
+      <img src="assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern" class="h-10 w-auto mb-4">
     </div>
     <div class="text-right font-sans">
       <h4 class="text-[12px] uppercase-spacing text-white/40 mb-6">Contacto</h4>

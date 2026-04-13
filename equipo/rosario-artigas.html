@@ -5,6 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Rosario Artigas Parra — AMH Abogados</title>
 <meta name="description" content="Rosario Artigas Parra, Asociada. AMH Artigas, Mosqueira & Halpern — Firma de abogados, Las Condes, Santiago, Chile.">
+<link rel="icon" type="image/png" href="../assets/images/logo/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logo/logo-mark-dark.png">
 <link rel="apple-touch-icon" href="../assets/images/logo/logo-mark-dark.png">
 <link rel="canonical" href="https://www.amhlegal.cl/equipo/rosario-artigas.html">
@@ -22,17 +23,21 @@
   :root { --pad:clamp(1.25rem,5vw,6rem); --navy:#131D2E; --navy-dark:#0D1B2A; --text-body:rgba(255,255,255,0.72); --text-muted:rgba(255,255,255,0.40); --border:rgba(255,255,255,0.12); }
   *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
   html,body { background:var(--navy); font-family:'Raleway',sans-serif; color:#fff; overflow-x:hidden; }
-  .page-wrapper { max-width:1200px; margin:0 auto; padding:0 var(--pad); }
+  .page-wrapper { max-width:1200px; margin:0 auto; padding:0 var(--pad); position:relative; z-index:1; }
   .top-bar { padding:clamp(1.75rem,4vw,3.5rem) 0 clamp(1.25rem,2.5vw,2rem); }
   .label { font-size:0.6875rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--text-muted); }
   .btn-close { position:fixed; top:1.5rem; right:1.75rem; z-index:100; font-size:1.375rem; font-weight:300; color:rgba(255,255,255,0.5); text-decoration:none; line-height:1; padding:0.75rem; background:rgba(19,29,46,0.7); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-radius:2px; transition:color 0.2s,background 0.2s; }
   .btn-close:hover { color:#fff; background:rgba(19,29,46,0.95); }
-  .profile-grid { display:grid; grid-template-columns:1fr 280px; column-gap:4rem; align-items:start; }
+  .profile-grid { display:grid; grid-template-columns:1fr 360px; column-gap:4rem; align-items:start; }
   .photo-col { order:2; position:sticky; top:2rem; }
-  .photo-col img { display:block; width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top center; filter:grayscale(100%); }
+  .photo-col-inner { position:relative; }
+  .page-deco-circles { position:fixed; top:-80px; left:-80px; width:900px; z-index:0; pointer-events:none; display:block; max-width:none; }
+  .page-deco { position:fixed; bottom:-80px; right:-80px; width:1200px; z-index:0; pointer-events:none; display:block; max-width:none; }
+  .photo-col-inner img { position:relative; display:block; width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top center; filter:grayscale(100%); }
+  /* photo styles moved to .photo-col-inner img */
   .name-col { order:1; }
   .name-heading { font-family:'Bitter',serif; font-weight:300; line-height:0.95; letter-spacing:-0.01em; color:#fff; font-size:clamp(2.25rem,5.5vw,5.75rem); margin-bottom:clamp(1.25rem,2.5vw,2rem); }
-  .profile-meta { border-top:1px solid var(--border); padding-top:clamp(1rem,2vw,1.5rem); margin-bottom:clamp(2rem,3.5vw,3rem); display:flex; align-items:baseline; gap:0.5rem 2rem; flex-wrap:wrap; }
+  .profile-meta { border-top:none; padding-top:clamp(1rem,2vw,1.5rem); margin-bottom:clamp(2rem,3.5vw,3rem); display:flex; align-items:baseline; gap:0.5rem 2rem; flex-wrap:wrap; }
   .profile-role { font-family:'Bitter',serif; font-size:1.25rem; font-weight:400; color:#fff; }
   .profile-email { font-size:0.8125rem; color:var(--text-muted); text-decoration:none; letter-spacing:0.03em; transition:color 0.2s; }
   .profile-email:hover { color:rgba(255,255,255,0.7); }
@@ -40,7 +45,7 @@
   .bio-text p { font-size:clamp(0.875rem,1.05vw,1rem); line-height:1.85; color:var(--text-body); max-width:64ch; margin-bottom:1.25rem; }
   .bio-text p:last-child { margin-bottom:0; }
   .bio-text p:first-child { font-size:clamp(0.9375rem,1.15vw,1.0625rem); color:rgba(255,255,255,0.85); }
-  .site-footer { background:var(--navy-dark); padding:1.75rem var(--pad); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+  .site-footer { position:relative; z-index:1; background:var(--navy-dark); padding:1.75rem var(--pad); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
   .site-footer img { height:26px; width:auto; display:block; }
   .footer-back { font-size:0.6875rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-muted); text-decoration:none; transition:color 0.2s; }
   .footer-back:hover { color:rgba(255,255,255,0.7); }
@@ -59,12 +64,16 @@
 </style>
 </head>
 <body>
+<img class="page-deco" src="../assets/images/bg/cuadrados.png" alt="" aria-hidden="true">
+<img class="page-deco-circles" src="../assets/images/bg/circulos.png" alt="" aria-hidden="true">
 <a href="../index.html#team" class="btn-close" aria-label="Volver al equipo">&#x2715;</a>
 <div class="page-wrapper">
   <div class="top-bar"><span class="label">Nuestro Equipo</span></div>
   <div class="profile-grid">
     <div class="photo-col">
-      <img src="../assets/images/team/team-8.png" alt="Rosario Artigas Parra">
+      <div class="photo-col-inner">
+        <img src="../assets/images/team/team-8.png" alt="Rosario Artigas Parra">
+      </div>
     </div>
     <div class="name-col">
       <h1 class="name-heading">Rosario<br>Artigas<br>Parra</h1>
@@ -85,5 +94,14 @@
   <a href="../index.html"><img src="../assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern"></a>
   <a href="../index.html#team" class="footer-back">← Volver al equipo</a>
 </footer>
+<script>
+(function(){
+  var m = document.querySelector('.profile-meta');
+  if(!m) return;
+  var y = m.getBoundingClientRect().top + window.pageYOffset;
+  document.body.style.background = 'linear-gradient(to bottom,#131D2E ' + y + 'px,#000000 ' + y + 'px)';
+  document.body.style.backgroundAttachment = 'local';
+})();
+</script>
 </body>
 </html>
