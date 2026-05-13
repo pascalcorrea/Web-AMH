@@ -94,5 +94,14 @@
   <a href="../"><img src="../../assets/images/logo/logo-white.png" alt="AMH Artigas, Mosqueira & Halpern"></a>
   <a href="../#team" class="footer-back">← Back to team</a>
 </footer>
+<script>
+(function(){
+  var m = document.querySelector('.profile-meta');
+  if(!m) return;
+  var y = m.getBoundingClientRect().top + window.pageYOffset;
+  document.body.style.background = 'linear-gradient(to bottom,#131D2E ' + y + 'px,#000000 ' + y + 'px)';
+  document.body.style.backgroundAttachment = 'local';
+})();
+</script>
 </body>
 </html>
