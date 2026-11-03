@@ -5,7 +5,7 @@
   <!-- Home ES -->
   <url>
     <loc>https://www.amhlegal.cl/</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/"/>
@@ -16,7 +16,7 @@
   <!-- Home EN -->
   <url>
     <loc>https://www.amhlegal.cl/en/</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/"/>
@@ -27,7 +27,7 @@
   <!-- Equipo ES -->
   <url>
     <loc>https://www.amhlegal.cl/equipo/alejandro-artigas.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/alejandro-artigas.html"/>
@@ -37,7 +37,7 @@
 
   <url>
     <loc>https://www.amhlegal.cl/equipo/francisco-mosqueira.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/francisco-mosqueira.html"/>
@@ -47,7 +47,7 @@
 
   <url>
     <loc>https://www.amhlegal.cl/equipo/gabriel-halpern.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/gabriel-halpern.html"/>
@@ -57,7 +57,7 @@
 
   <url>
     <loc>https://www.amhlegal.cl/equipo/carlos-cubillos.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/carlos-cubillos.html"/>
@@ -66,28 +66,18 @@
   </url>
 
   <url>
-    <loc>https://www.amhlegal.cl/equipo/magdalena-fernandez.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <loc>https://www.amhlegal.cl/equipo/gisel-chamblas.html</loc>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/magdalena-fernandez.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/magdalena-fernandez.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/magdalena-fernandez.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.amhlegal.cl/equipo/pablo-munoz.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/pablo-munoz.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/pablo-munoz.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/pablo-munoz.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/gisel-chamblas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/gisel-chamblas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/gisel-chamblas.html"/>
   </url>
 
   <url>
     <loc>https://www.amhlegal.cl/equipo/sofia-catalan.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/sofia-catalan.html"/>
@@ -97,7 +87,7 @@
 
   <url>
     <loc>https://www.amhlegal.cl/equipo/rosario-artigas.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/rosario-artigas.html"/>
@@ -105,10 +95,70 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/rosario-artigas.html"/>
   </url>
 
+  <url>
+    <loc>https://www.amhlegal.cl/equipo/jose-tomas-laval.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/jose-tomas-laval.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/jose-tomas-laval.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/jose-tomas-laval.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/equipo/clemente-castillo.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/clemente-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/clemente-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/clemente-castillo.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/equipo/nicolas-martins.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/nicolas-martins.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/nicolas-martins.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/nicolas-martins.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/equipo/maruxa-dreyer.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/maruxa-dreyer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/maruxa-dreyer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/maruxa-dreyer.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/equipo/constanza-diaz.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/constanza-diaz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/constanza-diaz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/constanza-diaz.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/equipo/maria-trinidad-barraza.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/maria-trinidad-barraza.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/maria-trinidad-barraza.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/maria-trinidad-barraza.html"/>
+  </url>
+
   <!-- Equipo EN -->
   <url>
     <loc>https://www.amhlegal.cl/en/equipo/alejandro-artigas.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/alejandro-artigas.html"/>
@@ -118,7 +168,7 @@
 
   <url>
     <loc>https://www.amhlegal.cl/en/equipo/francisco-mosqueira.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/francisco-mosqueira.html"/>
@@ -128,7 +178,7 @@
 
   <url>
     <loc>https://www.amhlegal.cl/en/equipo/gabriel-halpern.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/gabriel-halpern.html"/>
@@ -138,7 +188,7 @@
 
   <url>
     <loc>https://www.amhlegal.cl/en/equipo/carlos-cubillos.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/carlos-cubillos.html"/>
@@ -147,28 +197,18 @@
   </url>
 
   <url>
-    <loc>https://www.amhlegal.cl/en/equipo/magdalena-fernandez.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <loc>https://www.amhlegal.cl/en/equipo/gisel-chamblas.html</loc>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/magdalena-fernandez.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/magdalena-fernandez.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/magdalena-fernandez.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.amhlegal.cl/en/equipo/pablo-munoz.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/pablo-munoz.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/pablo-munoz.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/pablo-munoz.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/gisel-chamblas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/gisel-chamblas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/gisel-chamblas.html"/>
   </url>
 
   <url>
     <loc>https://www.amhlegal.cl/en/equipo/sofia-catalan.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/sofia-catalan.html"/>
@@ -178,12 +218,72 @@
 
   <url>
     <loc>https://www.amhlegal.cl/en/equipo/rosario-artigas.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/rosario-artigas.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/rosario-artigas.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/rosario-artigas.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/en/equipo/jose-tomas-laval.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/jose-tomas-laval.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/jose-tomas-laval.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/jose-tomas-laval.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/en/equipo/clemente-castillo.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/clemente-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/clemente-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/clemente-castillo.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/en/equipo/nicolas-martins.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/nicolas-martins.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/nicolas-martins.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/nicolas-martins.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/en/equipo/maruxa-dreyer.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/maruxa-dreyer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/maruxa-dreyer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/maruxa-dreyer.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/en/equipo/constanza-diaz.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/constanza-diaz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/constanza-diaz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/constanza-diaz.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.amhlegal.cl/en/equipo/maria-trinidad-barraza.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.amhlegal.cl/equipo/maria-trinidad-barraza.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.amhlegal.cl/en/equipo/maria-trinidad-barraza.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.amhlegal.cl/equipo/maria-trinidad-barraza.html"/>
   </url>
 
 </urlset>
